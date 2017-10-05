@@ -1,0 +1,38 @@
+git config --global user.name "nombre"
+git config --global --list
+
+
+git init //inicar proyecto
+git status // muestra lo q ya subimos o lo que nos falta por subir
+git add . o git add -A// adiciona carpetas
+git commit -m "mensaje" //comentarios de lo que cambiamos
+
+
+git log // mostrar commits
+git checkout //viajar entre los commits
+
+
+git branch // mostrar la rama donde estoy
+git branch nombrerama // crear una nueva rama
+git checkout nombrerama // cambiar entre ramas
+
+*UNIR RAMAS
+situarnos en la rama que va a absorber
+git merge ramaaabsorber
+
+----------------------
+git branch -D nombrerama // borrar rama
+--------------------------
+*GITHUB
+git remote add origin https://github.com/gio96/parque.git // conectar remoto con local
+git push -u origin master // la rama que se va a subir es master
+git remote -v // para ver con cual esta conectado
+git remote remove origin // desconectar remoto con local
+
+---------------------
+*Descargar nuevos comits
+git fetch origin
+git merge origin/master
+
+
+
