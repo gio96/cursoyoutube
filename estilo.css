@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	width: 100%;
+	background: rgba(42, 165, 193,.8);/*rgba manejar trasparencia con el .8*/
+	height: 70px;
+	position: fixed;/*que el header se quede fija*/
+	z-index: 2;/*los layers y su prioridad*/
+}
+.ancho{
+	width: 80%;
+	height: 70px;
+	margin: auto; //para que este centrada
+}
+.logo{
+	width: 30%;
+	height: 70px;
+	float: left; /*para que se hubique una al lado del otro*/
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+}
+.logo p a{
+
+	color: #fff; /*dentro del logo busca p y luego busque a y lo modifica*/
+	font-size: 70px;
+	padding-top: 10px;
+	box-sizing: border-box; /*que respete el tamaño de la caja logo*/
+	text-decoration: none; /*quitar subrayado de a*/
+}
+nav{
+	width: 70%;
+	height: 70px;
+	float: left;
+	text-align: right;
+	padding-top: 24px;
+	box-sizing: border-box; /*que respete el tamaño de la caja logo*/
+}
+
+nav ul li{
+	display: inline;/*se ubique en linea los li*/
+}
+
+nav ul li a{
+	color:#fff;
+	font-size: 15px;
+	text-decoration: none; /*quitar subrayado de a*/
+	text-transform: uppercase;
+	padding-left: 15px; /*separar los a*/
+	font-family: 'Raleway', sans-serif;
+}
+nav ul li a:hover{
+	color:#444;/*hover cuando el mouse pasa por encima*/
+}
+
+/*----------------------------------------------------------------- slider*/
+
+#particles-js{
+	background: url(imagenes/fondo.jpg);
+	/*responsive*/
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover; /*tome el tamaño del contenedor*/
+	widows: 100%;
+}
+/*----------------------------------------------------------------- animacion del centro*/
+.ancho-letras{
+	top: 200px;
+	position: absolute;/*NO le hace caso al orden predeterminado y pone sobre la otra imagen*/
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+}
+.letras-slider{
+	width: 80%;
+	margin: auto;
+}
+.letras-slider h1{
+	color:#000;
+	font-family: 'Raleway', sans-serif;
+	font-size: 70px;
+}
+.letras-slider p{
+	color:#000;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	padding-top: 50px;
+}
+/*----------------------------------------------------------------- secciones*/
+h1,h2,h4,h5,h6{
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+}
+h2{
+	font-size: 26px;
+}
+h3{
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	padding-top: 20px;
+	font-weight: normal; /*Para quitarle la negrilla*/
+}
+.wap{
+	width: 90%; /*tamaño con margenes*/
+	margin: auto;
+}
+.bienvenidos{
+	margin-top: 50px;
+	text-align: center;
+}
